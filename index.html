@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Random Password Generator</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Karla:wght@800&display=swap" rel="stylesheet">    </head>
+    <body>
+        <h1 id="title">Generate a<br><span id="title-green">random password</span></h1>
+        <p id="msg">Never use an insecure password again.</p>
+        <form>
+            <label for="length">Password length:
+                <input id="passwd-length" type="text" value="15"> digits<br>
+            </label>
+            <input class="checkbox" id="include-numbers" type="checkbox" checked>Include numbers<br>
+            <input class="checkbox" id="include-symbols" type="checkbox" checked>Include symbols
+        </form>
+        <button id="btn">Generate passwords</button>
+        <hr>
+        <div id="passwd-disp-wrapper">
+            <div class="passwd-disp" id="passwd1"></div>
+            <div class="passwd-disp" id="passwd2"></div>
+        </div>
+        <div class="invisible" id="passwd-guide-wrapper">
+            <div class="passwd-guide" id="guide1">↑Click to copy</div>
+            <div class="passwd-guide" id="guide2">↑Click to copy</div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
