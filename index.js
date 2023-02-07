@@ -40,7 +40,7 @@ function genPasswd(length) {
 }
 
 function selectChars() {
-    let chars = letters
+    let chars = letters  // Setting letters as the default
     if (incNums.checked && incSyms.checked) {
         chars = characters
     }

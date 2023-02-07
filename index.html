@@ -7,14 +7,24 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Karla:wght@800&display=swap" rel="stylesheet">    </head>
     <body>
-        <h1 id="title">Generate a<br><span id="title-green">random password</span></h1>
+        <h1 id="title">Generate a <span id="title-green">random password</span></h1>
         <p id="msg">Never use an insecure password again.</p>
+        <h2 id="header-steps">3 easy steps !</h2>
         <form>
-            <label for="length">Password length:
-                <input id="passwd-length" type="text" value="15"> digits<br>
-            </label>
-            <input class="checkbox" id="include-numbers" type="checkbox" checked>Include numbers<br>
-            <input class="checkbox" id="include-symbols" type="checkbox" checked>Include symbols
+            <ol>
+                <li>
+                    <label for="length">Password length:
+                        <input id="passwd-length" type="range" min="8" max="128" value="16" oninput="num.value = this.value"></input>
+                        <output class="length-input" id="num">16</output> digits
+                    </label>
+                </li>
+                <li>
+                    <input class="checkbox" id="include-numbers" type="checkbox" checked>Include numbers<br>
+                </li>
+                <li>
+                    <input class="checkbox" id="include-symbols" type="checkbox" checked>Include symbols
+                </li>
+            </ol>
         </form>
         <button id="btn">Generate passwords</button>
         <hr>
