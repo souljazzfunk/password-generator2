@@ -5,6 +5,9 @@
 ## Overview
 This project provides a simple yet effective way to generate random passwords. You can customize the password by specifying the length and optionally including numbers and special symbols.
 
+## Demo
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e01367c4-aa88-454b-bd4c-96afa103de05/deploy-status)](https://sjf-passwd.netlify.app/)
+
 ## Installation
 1. Clone this repository or download the code.
 2. Open `index.html` in your web browser.
