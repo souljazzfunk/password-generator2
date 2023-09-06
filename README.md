@@ -20,7 +20,5 @@ Once you have the project running in your browser:
 3. Click the "Generate" button to create a new password.
 4. You'll see two suggested passwords. Click on either to copy it to your clipboard.
 
-### Generating a Password with Default Settings
-```javascript
-// Generates an 8-character password consisting of letters
-const password = genPasswd(8);
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
